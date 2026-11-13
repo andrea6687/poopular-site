@@ -1,0 +1,24 @@
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Local agent and editor state
+.claude/settings.local.json
+.cursor/
+.mcp.json
+mcp.json
+CLAUDE.local.md
+
+# Private keys and credentials
+*.pem
+*.p8
+*.p12
+*.key
+id_rsa
+id_ed25519
+.netrc
+credentials.json
+
+# macOS
+.DS_Store

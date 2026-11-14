@@ -1,0 +1,24 @@
+name: Idea / Proposta
+description: Suggest an improvement. / Proponi un miglioramento.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would it solve? / Quale problema risolverebbe?
+      description: For example a sentence on the page that is unclear. / Per esempio una frase della pagina che non è chiara.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea / La tua idea
+    validations:
+      required: true
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - label: This is about the page, or the app as the page describes it. It is not medical advice, and it does not collect anyone's entries. / Riguarda la pagina, o l'app come la pagina la descrive. Non è un consiglio medico e non raccoglie i segni di nessuno.
+          required: true

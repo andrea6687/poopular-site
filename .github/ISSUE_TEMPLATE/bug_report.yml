@@ -1,0 +1,37 @@
+name: Bug report / Segnala un problema
+description: Something doesn't work as expected. / Qualcosa non funziona come previsto.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Please remove anything private before posting. Do not include your entries (dates, times, characters).
+        Grazie per la segnalazione! Togli eventuali dati privati prima di pubblicare. Non includere i tuoi segni (date, orari, personaggi).
+  - type: dropdown
+    id: about
+    attributes:
+      label: This is about / Riguarda
+      options:
+        - The page / La pagina
+        - The app on iPhone or Apple Watch / L'app su iPhone o Apple Watch
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Where you saw it / Dove l'hai visto
+      description: The page address, or the device. / L'indirizzo della pagina, oppure il dispositivo.
+      placeholder: "https://andrea6687.github.io/poopular-site/   or   iPhone, Apple Watch"
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened, and what you expected / Cosa è successo e cosa ti aspettavi
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot (optional) / Screenshot (facoltativo)
+      description: Drag an image here. Leave out dates, times and characters. / Trascina qui un'immagine. Lascia fuori date, orari e personaggi.
